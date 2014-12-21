@@ -1,12 +1,12 @@
 class Solution {
 public:
-    vector<vector<int> > threeSum(vector<int> &num) {
-        vector <vector <int> > s;
+	vector<vector<int> > threeSum(vector<int> &num) {
+		vector <vector <int> > s;
 		if(num.size()<3)
 			return s;			
 		sort(num.begin(), num.end());
 		for(int i=0; i<num.size()-2; i++){
-            int j=i+1;
+			int j=i+1;
 			if(i>0 && num[i] == num[i-1]){
 				continue;
 			}
@@ -34,8 +34,8 @@ public:
 					}
 				}
 			}
-        }
+		}
 
-        return s;
-    }
+		return s;
+	}
 };
